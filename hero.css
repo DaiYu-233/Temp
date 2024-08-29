@@ -267,6 +267,12 @@
     font-size: 38px;
   }
 }
+
+@media (min-width: 769px) and (max-width: 1150px) {
+  .header-shape-2 {
+    display: none;
+  }
+}
 .header-hero-content .header-title span {
   display: contents;
   color: #0898e7;
@@ -315,9 +321,9 @@
   z-index: -1;
 }
 
-.round {
+.page-round {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  margin-top: -74px;
+  top: 0;
 }

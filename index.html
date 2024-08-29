@@ -1,21 +1,70 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
   <head>
-    <head>
-      <meta name="keywords" content="YMCL,ymcl,Yu Minecraft Launcher,呆鱼,Minecraft Launcher,我的世界启动器" />
-      <meta name="description" content="Yu Minecraft Launcher(YMCL)官网!" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="shortcut icon" href="./YMCL-Icon.ico" type="image/x-icon" />
-      <title>Yu Minecraft Launcher · YMCL</title>
-      <link rel="stylesheet" href="hero.css" />
-      <link rel="stylesheet" href="public.css" />
-      <link rel="stylesheet" href="main.css" />
-    </head>
+    <meta name="keywords" content="YMCL,ymcl,Yu Minecraft Launcher,呆鱼,Minecraft Launcher,我的世界启动器" />
+    <meta name="description" content="Yu Minecraft Launcher(YMCL)官网!" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./YMCL-Icon.ico" type="image/x-icon" />
+    <title>Yu Minecraft Launcher · YMCL</title>
+    <link rel="stylesheet" href="hero.css" />
+    <link rel="stylesheet" href="public.css" />
+    <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" href="main.css" />
+    <script src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script>
+    <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+    <script src="./nav.js"></script>
   </head>
   <body>
-    <header>
-      <nav class="navbar nav">gfouwefgouweg</nav>
-      <div id="1" class="header-hero bg_cover d-lg-flex align-items-center round">
+    <header style="height: 100vh">
+      <div class="nav-area" id="navbar">
+        <div class="nav-container">
+          <nav class="navbar nav">
+            <div class="list-root">
+              <a class="nav-a title-l" style="float: left" href="/">Yu Minecraft Launcher</a>
+              <a class="nav-a title-s" style="float: left" href="/">YMCL</a>
+              <div class="pc-nav-ul" style="float: right">
+                <a class="nav-a nav-pc-a-jump" href="/">主页</a>
+                <a class="nav-a nav-pc-a-jump" href="/">下载</a>
+                <a class="nav-a nav-pc-a-jump" href="/">常见问题</a>
+                <a class="nav-a nav-pc-a-jump" href="/">意见反馈</a>
+                <a class="nav-a nav-pc-a-jump" href="/">源代码仓库</a>
+              </div>
+              <a class="nav-a nav-pc-a-jump mobile-nav-open-menu" style="float: right" href="javascript:ToggleMobileMenu();">打开菜单</a>
+            </div>
+          </nav>
+          <div class="mobile-nav-ul-container" style="top: -350px">
+            <ul class="mobile-nav-ul">
+              <li class="nav-item active">
+                <a class="nav-a">主页</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-a">下载</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-a">常见问题</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-a">意见反馈</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-a">源代码仓库</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="main-div">
+        <main>
+          <div>
+            <label>
+              Yu Minecraft Launcher
+              <button type="button" id="DownloadButton" onclick="window.open('https://github.com/DaiYu-233/YMCL.Avalonia/releases')">立即下载</button>
+            </label>
+            <img src="./YMCL-Icon.svg" alt="logo" id="BigLogo" />
+          </div>
+        </main>
+      </div>
+      <div id="1" class="header-hero bg_cover d-lg-flex align-items-center page-round">
         <div class="shape shape-1"></div>
         <div class="shape shape-2"></div>
         <div class="shape shape-3"></div>
@@ -28,7 +77,5 @@
         <img src="./header-shape-2.svg" alt="shape" />
       </div>
     </header>
-    <script src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script>
-    <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
   </body>
 </html>

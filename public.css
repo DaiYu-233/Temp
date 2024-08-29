@@ -1,16 +1,42 @@
-@font-face {
-  font-family: ZhuZiAYuanJWD;
-  src: url(https://npm.elemecdn.com/anzhiyu-blog@1.1.6/fonts/ZhuZiAWan.woff2);
-  font-display: swap;
-  font-weight: lighter;
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Poppins:300,400,500,600,700&display=swap);
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  color: #747e88;
 }
 
 * {
   margin: 0;
   padding: 0;
   font-family: "ZhuZiAYuanJWD";
+  user-select: none;
+  cursor: url(./x1.cur), auto;
 }
 
 body {
   background: #fff;
+  position: relative;
+  overflow-x: hidden !important;
+}
+
+/* 基本的滚动条样式 */
+::-webkit-scrollbar {
+  width: 12px; /* 滚动条宽度 */
+}
+
+::-webkit-scrollbar-track {
+  background: #e6f2ff; /* 轨道背景颜色 */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #85b4e5; /* 滑块颜色 */
+  border-radius: 10px; /* 滑块圆角 */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5c93ca; /* 鼠标悬停时滑块颜色 */
+}
+a:hover {
+  color: #0898e7;
 }
