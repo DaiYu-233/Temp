@@ -1,0 +1,1 @@
+function Parse(framework, way) {}

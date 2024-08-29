@@ -26,8 +26,34 @@ var menu = 0;
 function ToggleMobileMenu() {
   if (menu % 2 == 0) {
     document.querySelector("body > header > div.nav-area > div > div").style.top = "-40px";
+    document.getElementById("menu-btn").innerHTML = "关闭菜单";
   } else {
     document.querySelector("body > header > div.nav-area > div > div").style.top = "-350px";
+    document.getElementById("menu-btn").innerHTML = "打开菜单";
   }
   menu++;
 }
+
+function loadPage(page) {
+  menu = 0;
+  if (page == "download") {
+    window.location = "/download";
+  } else if (page == "home") {
+    window.location = "/";
+  }
+}
+
+var homeData = null;
+var downloadData = null;
+fetch("/")
+  .then((response) => response.text())
+  .then((data) => {
+    homeData = data;
+  })
+  .catch((error) => console.error("Error:", error));
+fetch("/download")
+  .then((response) => response.text())
+  .then((data) => {
+    downloadData = data;
+  })
+  .catch((error) => console.error("Error:", error));

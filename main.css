@@ -33,7 +33,7 @@ main > div {
 }
 #BigLogo {
   width: calc(0.53 * 100vw);
-  max-width: 410px;
+  max-width: 380px;
 }
 #DownloadButton {
   display: block;
