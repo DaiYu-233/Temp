@@ -26,10 +26,10 @@ var menu = 0;
 function ToggleMobileMenu() {
   if (menu % 2 == 0) {
     document.querySelector("body > header > div.nav-area > div > div").style.top = "-40px";
-    document.getElementById("menu-btn").innerHTML = "关闭菜单";
+    // document.getElementById("menu-btn").innerHTML = "关闭菜单";
   } else {
     document.querySelector("body > header > div.nav-area > div > div").style.top = "-350px";
-    document.getElementById("menu-btn").innerHTML = "打开菜单";
+    // document.getElementById("menu-btn").innerHTML = "打开菜单";
   }
   menu++;
 }
